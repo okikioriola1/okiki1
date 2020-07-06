@@ -148,17 +148,22 @@ font-family: "Open Sans";
     margin-top: 0px;
     
     background-color: hsl(192, 100%, 9%);
-    background-repeat: cover;
+    background-size: cover;
     color: #fff;
+}
+.form{
+    margin:0px;
 }
 .newsletter{
  grid-area: 1/2/1/2;
- padding: 100px 100px;
+ padding-top: 70px;
+ padding-left:10px;
+
  border:none;
 }
 .contact{
     grid-area: 1/1/1/1;
-    padding: 100px 100px;
+    padding: 50px ;
     border: none;
 }
 .form li{
@@ -188,6 +193,7 @@ font-family: "Open Sans";
 }
 .location{
     padding-top: 40px;
+    padding-right: inherit;
 }
 .newsletter-heading{
     font-family: "Poppins";
@@ -196,12 +202,13 @@ font-family: "Open Sans";
 }
 .newsletter-info{
     padding-bottom: 30px;
+    padding-right: inherit;
 }
 .contact-info{
     padding-top: 20px;
 }
 
-@media (max-width: 768px)
+@media (max-width: 800px)
 {
     .hero-header{
         font-size: 30px;
@@ -210,10 +217,13 @@ font-family: "Open Sans";
         margin:20px 5px;
         padding-bottom: 10px;
     }
+    .try-it{
+        width:100px
+    }
     .numbers{
         margin-top: 80px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 70px;
         padding-bottom:80px;
         
         background: url("images/bg-section-top-mobile-1.svg") no-repeat left bottom;
@@ -271,5 +281,9 @@ font-family: "Open Sans";
         background-size: contain;
         
         padding-bottom: 230px;
+    }
+    .form-control{
+        width:inherit;
+        height:inherit;
     }
 }
